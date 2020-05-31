@@ -1,0 +1,23 @@
+.album_cover{
+	width:25%;
+	border: 2px solid ;
+	/*padding:20px;*/
+
+}
+
+.photo_list{
+	width:75%;
+	max-height:100px;
+	padding:10px;
+}
+
+.single_photo{
+	width:100%;
+}
+.col-md-1, .col-md-2, .col-md-4{
+	border:1px solid red;
+}
+
+.basic_img{
+	width:100%;
+}

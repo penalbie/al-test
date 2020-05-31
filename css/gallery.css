@@ -1,0 +1,32 @@
+.crop-img{
+  max-height:100px;
+  min-width: 150px;
+4}
+
+.large-img{
+  max-width:250%;
+}
+
+.carousel-img{
+    margin: auto;
+    padding: 10px;
+    max-height:500px;
+    max-width:650%;
+
+}
+
+/* 
+ * uncomment this for some css3 drop shadows and rounded corners.
+ */
+
+
+.thumbnail,.nav, .large-img, .crop-img{
+  border-radius: 25px;
+  /*padding-top:5px;*/
+  padding-right: 0px;
+}
+
+.thumbnail,.nav {
+  box-shadow: 10px 10px 5px #888888;
+}
+
