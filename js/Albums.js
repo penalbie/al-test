@@ -79,3 +79,29 @@ var gallery = {
 };
 gallery.albums[0].photos.push( {src:"images/roses/rose1.jpg", title:"repeat ",
                  description:"media "});
+gallery.albums[0].photos.push( {src:"images/roses/rose2.jpg", title:"repeat ",
+                 description:"media "});
+gallery.albums[0].photos.push( {src:"images/roses/rose3.jpg", title:"repeat ",
+                 description:"media "});
+gallery.albums[0].photos.push( {src:"images/roses/rose4.jpg", title:"repeat ",
+                 description:"media "});
+gallery.albums[0].photos.push( {src:"images/roses/rose5.jpg", title:"repeat ",
+                 description:"media "});
+gallery.albums[0].photos.push( {src:"images/roses/rose6.jpg", title:"repeat ",
+                 description:"media "});
+gallery.albums[0].photos.push( {src:"images/roses/rose7.jpg", title:"repeat ",
+                 description:"media "});
+gallery.albums[0].photos.push( {src:"images/roses/rose8.jpg", title:"repeat ",
+                 description:"media "});
+gallery.albums[0].photos.push( {src:"images/roses/rose9.jpg", title:"repeat ",
+                 description:"media "});
+gallery.albums[0].photos.push( {src:"images/roses/rose10.jpg", title:"repeat ",
+                 description:"media "});
+gallery.albums[0].photos.push( {src:"images/roses/rose11.jpg", title:"repeat ",
+                 description:"media "});
+gallery.albums[0].photos.push( {src:"images/roses/rose12.jpg", title:"repeat ",
+                 description:"media "});
+gallery.albums[0].photos.push( {src:"images/roses/rose13.jpg", title:"repeat ",
+                 description:"media "});
+gallery.albums[0].photos.push( {src:"images/roses/rose14.jpg", title:"repeat ",
+                 description:"media "});
