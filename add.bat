@@ -1,5 +1,5 @@
 @Echo
 git add .
-git commit -m ""
+git commit -m " files"
 git push
 
