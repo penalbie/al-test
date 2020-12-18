@@ -1,0 +1,99 @@
+
+#s=input("enter")
+
+s="4 + 8 * 7+5*7-9*7 )"
+
+global number
+number=""
+ops = []
+vals = []
+all=[]
+
+str1= "this is the string example....wow!!!"
+str2="exam"
+i=0
+
+
+"""start=s.find("*",start)
+print(s.find("*",start))
+#print(start+1)
+print(s.find("*",start+1))
+#print(s.find("*",s.find("*",start+1)))"""
+
+def push_vals(item):
+    vals.append(item)
+
+def push_ops(item):
+    ops.append(item)
+
+def push_all(item):
+    all.append(item)    
+
+i=0
+while i < len(s):    
+    if s[i]!=" ":
+        push_all(s[i])
+    i += 1
+print(all)
+
+i=0
+def mult_sign(i):
+    
+    while i < len(all) :
+
+        if all[i] =="*" and i < len(all) :
+            print(all[i-1],all[i],all[i+1],"##*****",float(all[i-1])*float(all[i+1]))
+            all[i-1]=float(all[i-1])*float(all[i+1])
+            all[i]=0
+            all[i+1]=0
+        i += 1
+        
+        mult_sign(i)
+        
+ 
+#mult_sign(i)
+
+i=0
+while i < len(all):    
+    if all[i] =="*":
+        print(all[i-1],all[i],all[i+1],"*****",float(all[i-1])*float(all[i+1]))
+        all[i-1]=float(all[i-1])*float(all[i+1])
+        all[i]=0
+        all[i+1]=0
+    i += 1    
+print(all)
+i=0
+while i < len(s):    
+    ch=s[i]
+    i += 1
+    
+    if ch=="1" or ch=="2"or ch=="3"or ch=="4"or ch=="5"or ch=="6"or ch=="7"or ch=="8" or ch=="9"or ch=="0":            
+        push_vals(float(ch))
+        #print(ops,"1 or 2...")
+        #print(vals,"1 or 2...")       
+    elif ch=="+":       
+        push_ops(ch)
+        #print(ops,"+")
+        #print(vals,"+") 
+
+    elif ch=="*":         
+        push_ops(ch)
+        #print(ops,"*")
+        #print(vals,"*")
+
+    elif ch==")" :
+        while len(ops) !=0:
+            #print(ops,"end")
+            #print(vals,"end")
+            op=ops.pop()
+            #print(op,"op")
+            if op=="*" :
+                push_vals(vals.pop() * vals.pop())
+            elif op=="+":
+                push_vals(vals.pop() +  vals.pop())
+            
+   
+print(ops)
+print(vals)
+
+
